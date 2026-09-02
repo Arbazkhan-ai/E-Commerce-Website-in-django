@@ -13,7 +13,13 @@
         <p>Age: {{ student.age }}</p>
         <p>Email: {{ student.email }}</p>
 
+        <a href="{% url 'edit_student' student.id %}">
+            Edit
+        </a>
+
+        <hr>
+
     {% endfor %}
 
 </body>
-</html> 
+</html>
